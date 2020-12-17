@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> ALUMNI SYSTEM </title>
+        <link rel="stylesheet" href="{% static '/assets/css/main.css' %}" />
+        <link rel="stylesheet" href="{% static '/assets/css/style.css' %}" />
+    </head>  
+    <body>
+       
+        <header id="header" class="alt">
+				<div class="logo"><a href="index.html">
+                    <img src="{% static '/images/alumni.png' %}" width=290px height=100px/>
+                    </a></div>
+				<a href="#menu">Menu</a>
+			</header>
+        <!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<!--<li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>-->
+					<li><a href="signup.html">Sign Up</a></li>
+					<li><a href="{% url 'login' %}">Login</a></li>
+                  <!--  <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>-->
+                    
+				</ul>
+			</nav>
+        <div class="login-block">
+            <form method = "POST" action= "" autocomplete="on">
+            	{% csrf_token %}
+               <h1>Registration Form</h1> 
+                <!--<input type ="text" name="username" placeholder="Name*" autofocus required>
+                <input type="email" name="email" placeholder="email*" required>
+                <input type="tel" name="contact_number" placeholder="Contact No*" required>-->
+                <!--<input type="text">-->
+                <!--<input type="text" name="enrollment_no" placeholder="Enrollment No*" required>
+                <input type="text" name="course" placeholder="Course*" required>
+                <input type="text" name="branch" placeholder="Branch*" required>
+                <input type="text" name="current_job" placeholder="Current Job*" required>
+                <input type="text" name="passing_year" placeholder="Passing Year*" required>
+                <input type="password" name="password" placeholder="Password*" required>
+                <input type="password" name="con_password" placeholder="confirm Password*" required>-->
+         
+		{{form.username}}
+	
+	
+		{{form.email}}
+	
+	
+		{{form.first_name}}
+	
+		
+		{{form.last_name}}
+	
+	
+		{{form.password1}}
+		
+	
+		{{form.password2}}
+                <button name="submit" type="submit">Signup</button>
+                <!--<input type="submit" value="Signup"/>-->
+             	{{form.errors}}
+                <a href="{% url 'login' %}" class="link">If you are already a user</a>
+            </form>
+            
+        </div>
+        <script>
+		var form_fields = document.getElementsByTagName('input')
+		form_fields[1].placeholder='Username..';
+		form_fields[2].placeholder='Email..';
+		form_fields[3].placeholder='First Name..';
+		form_fields[4].placeholder='Last Name..';
+		form_fields[5].placeholder='Enter password...';
+		form_fields[6].placeholder='Re-enter Password...';
+
+
+		for (var field in form_fields){	
+			form_fields[field].className += ' form-control'
+		}
+	</script>
+       <!--<script>
+    		alert({{form.errors}});
+	</script>-->
+	
+	
+        <script src="{% static '/assets/js/jquery.min.js' %}"></script>
+       <script src="{% static '/assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static '/assets/js/skel.min.js' %}"></script> 
+			<script src="{% static '/assets/js/util.js' %}"></script>
+			<script src="{% static '/assets/js/main.js' %}"></script>
+    </body>
+</html>
+
+<!--<form method = "POST" action = "">
+	{% csrf_token %}
+	{{ form.username.label }}
+	{{ form.username }}
+	
+	{{ form.email.label }}
+	{{ form.email }}
+	
+	{{ form.first_name.label }}
+	{{ form.first_name }}
+	
+	{{ form.last_name.label }}
+	{{ form.last_name }}
+	
+	{{ form.password1.label }}
+	{{ form.password1 }}
+	
+	{{ form.password2.label }}
+	{{ form.password2 }}
+	
+ </form> -->
+	
+	
+	
+	
+	
+	
+	
+	
+</form>

@@ -1,0 +1,135 @@
+
+.login-blockk {
+    width: 375px;
+    padding: 20px;
+    background: rgba(121, 85, 72, 0.06);
+    border-radius: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.66);
+    margin: auto;
+    margin-top: 0px;
+}
+
+.login-blockk h1 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.66);
+    font-size: 25px;
+    font-weight:lighter;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/*.login-blockk input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+}*/
+.forgot {
+    float: right;
+    padding: 5px;
+    margin-top: -5px;
+    text-decoration: none;
+    font-size: 15px;
+  /*  color: rgba(0,0,0,0.76);*/
+    color: #ffffff;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+/*.login-blockk button {
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.66);
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+.login-blockk button:hover {
+    background: rgba(0, 0, 0, 0.4);
+}*/
+
+
+.box{
+	
+	height: 95px;
+    float: right;
+    margin: 7px 110px 7px 40px;   
+}
+.text{
+	list-style:none;
+	float: right;
+    color: #ffffff;
+    margin-top: 10px;
+	
+}
+
+.text a{
+	list-style:none;
+	color: #ffffff;
+	text-decoration:none;
+
+}
+.text ul{
+	list-style:none;
+	display:none;
+}
+
+.text li:hover  ul{
+	list-style:none;
+	display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.07);
+    padding: 10px 10px;
+    margin: 0px -10px;
+    width: 100px;
+}
+.image{
+	height: 35px;
+    margin:-1px -3px;
+	border:1px solid rgba(0, 0, 0, 0.38);
+	border-radius:25px;
+}
+
+   .bar{
+	border: 1px solid rgba(0, 0, 0, 0.42);
+	width:100%;
+	height:115px;
+	background-color:rgba(0, 0, 0,0.66);
+    margin: -8px 0px 80px 0px;
+}
+.logo {
+    height: 100px;
+    width: 290px;
+    float: left;
+}
+.abc{
+	
+	margin: -39px 72px;
+    background-color: rgba(0, 0, 0, 0.66);
+    border-radius: 19px;
+    border: 0px;
+    width: 110px;
+    float: right;
+    height: 35px;
+	color: #fff;
+}
+button a{
+	text-decoration:none;
+	color: #fff;
+}
+.user_profile{
+	width:95% !important;
+}

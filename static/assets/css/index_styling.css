@@ -1,0 +1,41 @@
+body{
+    
+    background: url('../../images/8ce39d0b3eeae85e29fba556b1c7a7c9.jpg') no-repeat;
+    background-size: cover;
+}
+
+.hori_list li{
+    list-style: none;
+    display:inline;
+    float: right;
+    padding-right: 25px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.hori_list ul {
+    margin:0;
+}
+.hori_list a{
+    text-decoration: none;
+    color: #ccccff;
+}
+hori_list a:hover{
+    background: red;
+}
+header,footer {
+    height: 30px;
+    background-color: rgb(0,0,0); 
+    }
+.hori_list{
+    height:60px;
+   background-image: linear-gradient(to left, black 10%, white 100%);
+}
+
+.hori_list img {
+    float: left;
+    width: 280px;
+    height:60px;
+
+}

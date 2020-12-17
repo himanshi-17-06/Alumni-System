@@ -1,0 +1,105 @@
+body {
+    background: url('../images/images.jpg') no-repeat;
+    background-size: cover;
+}
+#forgot-image{
+    width: 250px;
+    height: 250px;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.forgot-block
+{
+    width: 375px;
+    border-top: 5px solid #404040; /*#ff0000*/
+    border-radius: 15px;
+    margin-top: 150px;
+    background: rgba(0,0,0,0.30);
+    padding: 20px;
+    float: center;
+    margin-right: 150px;
+    margin-left: 450px;
+}
+
+.forgot-block h1
+{
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    color: #404040;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.forgot-block input
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px 0 50px;
+    margin-bottom: 20px;
+    height: 42px;
+    /*font-family: cursive;*/
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.forgot-block button
+{
+    width: 100%;
+    box-sizing: border-box;
+    color: rgb(255,255,255);
+    height: 42px;
+    text-transform: uppercase;
+    background: #404040;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #404040;/*#e15960;*/
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.forgot-blockkk
+{
+    width: 375px;
+    border-top: 5px solid #ff0000;
+    border-radius: 15px;
+    margin-top: 200px;
+    background: rgba(0,0,0,0.20);
+    padding: 20px;
+    float: center;
+    margin-right: 150px;
+}
+.forgot-blockkk h1
+{
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    color: rgb(255,255,255);
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.forgot-blockkk input
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px 0 50px;
+    margin-bottom: 20px;
+    height: 42px;
+    /*font-family: cursive;*/
+    border-radius: 5px;
+}
+.forgot-blockkk button
+{
+    width: 100%;
+    box-sizing: border-box;
+    color: rgb(255,255,255);
+    height: 42px;
+    text-transform: uppercase;
+    background: #ff0000;
+    font-size: 18px;
+    border: 1px solid #e15960;
+    border-radius: 5px;
+    cursor: pointer;
+}

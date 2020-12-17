@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ALUMNI SYSTEM</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<style>
+			body{
+			background-color: #ebeff5;
+		}
+			.hello-msg{
+    		font-size: 18px;
+    		color: #fff;
+    		margin-right: 50px;
+  		}
+  			.logout-msg{
+    		font-size: 18px;
+    		color: #fff;
+    		margin-right: 20px;
+  		}
+  			.link-msg a:hover{
+    		color: red;
+  		}
+  		.profile-pic{
+			max-width: 300px;
+			max-height:200px;
+			margin: 0 auto;
+			/*border-radius: 50%;*/
+		}
+		.rght{
+			margin-top: 30px;
+			margin-left: 30px;
+			box-shadow: 5px 5px 15px 5px #000000;
+		}
+		.lft{
+			margin-left: 180px;
+			margin-top: 30px;
+			box-shadow: 5px 5px 15px 5px #000000;
+		}
+		b{
+			font-family: Lucida Console;
+			font-size: 15px;
+		}
+		</style>
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  			<a class="navbar-brand" href="#">Navbar</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+   				<div class="navbar-nav">
+     				<a class="nav-item nav-link active" href="{% url 'admin_dashboard' %}">Dashboard</a>
+        			<!--<a class="nav-item nav-link" href="">Profile</a>-->
+      				<a class="nav-item nav-link" href="{% url 'notices_list' user.id %}">Notices And Events</a>
+      				<a class="nav-item nav-link" href="{% url 'upload_notices' user.id %}">Upload Notices</a>
+     
+    			</div>
+  			</div>
+    		<span class="hello-msg">Hello, {{request.user}}</span>
+    		<span class="link-msg"><a href="{% url 'logout' %}" class="logout-msg">Logout</span></a>
+		</nav>
+		
+		<div class="row">
+			<div class="col-md-3 lft">
+				<div class="card card-body">
+					<a class="btn btn-warning" href="#"> &#8592; Back to Dashboard</a>
+				<hr>
+				
+				<img class="profile-pic" src="{{profile.profile_pic.url}}" >
+			
+				</div>
+			</div>
+			<div class="col-md-5 rght"> 
+				<div class="card card-body">
+					<b>Username: {{profile.name}}<br></b>
+					<b>Phone: {{profile.phone}}<br></b>
+					<b>Pasing Year: {{profile.passing_year}}<br></b>
+					<b>Enrollment Number: {{profile.enrollment_number}}<br></b>
+					<b>Course: {{profile.course}}<br></b>
+					<b>Branch: {{profile.branch}}<br></b>
+
+					<b>Current State: {{profile.current_state}}<br></b>
+					<b>Current City: {{profile.current_city}}<br></b>
+					
+					<b>Current job:  {{profile.current_job}}</b>
+					
+				</div>
+			</div>
+		
+		</div>
+			
+		
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

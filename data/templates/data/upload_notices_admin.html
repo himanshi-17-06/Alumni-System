@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ALUMNI SYSTEM</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<style>
+			body{
+			background-color: #ebeff5;
+		}
+		.card{
+			margin-left: 400px;
+			margin-top: 100px;
+			margin-right: 400px;
+			padding-left: 70px;
+			border-radius: 15px;
+    		background-color: rgba(255,255,255,0.43);
+
+			box-shadow: 5px 5px 15px 5px #000000;
+		}
+		h3{
+			
+			font-family: Lucida Console;
+		}
+		.btn{
+			margin-left: 120px;
+		}
+		.hello-msg{
+    		font-size: 18px;
+    		color: #fff;
+    		margin-right: 50px;
+  		}
+  			.logout-msg{
+    		font-size: 18px;
+    		color: #fff;
+    		margin-right: 20px;
+  		}
+  			.link-msg a:hover{
+    		color: red;
+  		}
+		</style>
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  		<a class="navbar-brand" href="#">Navbar</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+   			<div class="navbar-nav">
+     		<a class="nav-item nav-link active" href="{% url 'admin_dashboard' %}">Dashboard</a>
+      		<a class="nav-item nav-link" href="{% url 'notices_list_admin' user.id %}">Notices And Events</a>
+      		<a class="nav-item nav-link" href="{% url 'upload_notices_admin' user.id %}">Upload Notices</a>
+
+     
+    		</div>
+  </div>
+  <span class="hello-msg">Hello, {{request.user}}</span>
+  <span class="link-msg"><a href="{% url 'logout' %}" class="logout-msg">Logout</span></a>
+</nav>
+		<div class="row">
+		<div class="card card-body" >
+
+		<form method="POST" action ="" enctype="multipart/form-data">
+			<h3 align="center">Upload Notice</h3>
+				{% csrf_token %}
+				{{ form.as_p }}
+		
+		<button type="submit" class="btn btn-primary">Upload Notice</button>	
+		</form>
+		</div>	
+		
+	</div>
+		
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

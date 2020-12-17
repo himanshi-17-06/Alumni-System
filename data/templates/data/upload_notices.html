@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ALUMNI SYSTEM</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<style>
+			body{
+			background-color: #ebeff5;
+		}
+		.card{
+			margin-left: 400px;
+			margin-top: 100px;
+			margin-right: 400px;
+			padding-left: 70px;
+			border-radius: 15px;
+    		background-color: rgba(255,255,255,0.43);
+
+			box-shadow: 5px 5px 15px 5px #000000;
+		}
+		h3{
+			
+			font-family: Lucida Console;
+		}
+		
+		.btn{
+			margin-left: 120px;
+		}
+		</style>
+	</head>
+	
+	<body>
+		{% include 'data/nav.html' %}
+		<div class="row">
+		<div class="card card-body">
+
+		<form method="POST" action ="" enctype="multipart/form-data">
+			<h3 align="center">Upload Notice</h3>
+				{% csrf_token %}
+				{{ form.as_p }}
+		
+		<button type="submit" class="btn btn-primary">Upload Notice</button>	
+		</form>
+		</div>	
+		
+	</div>
+		
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

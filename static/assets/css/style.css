@@ -1,0 +1,163 @@
+
+body{
+   /* height: 100%;*/
+    background: url('../../images/background.jpg') no-repeat;
+    background-size: cover;
+}
+
+div.dash{
+    color: white;
+    width: 100%;
+    border-top: 5px solid #ff656c;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.43);
+    padding: 20px;
+    margin-top: 150px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 0px;
+   
+}
+.login-block {
+    color: black;
+    width: 400px;
+    border-top: 5px solid #ff656c;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.43);
+    margin: auto;
+    padding: 20px;
+    margin-top: 150px;
+   
+}
+.login-block p {
+	color: #ffffff;
+}
+.login-block input {
+
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+   /* font-family: cursive;*/
+    font-weight: bold;
+    padding: 0 20px 0 50px;
+    height: 42px;
+
+}
+#check
+{
+    float: left;
+    width: auto;
+    margin-bottom: 0px;
+   /* margin-top: 0px;*/
+}
+.login-block h1 {
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: rgb(255, 255,255) ;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.login-block button {
+    color: rgb(255,255,255);
+    width:100%;
+    height: 42px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background:  #ff656c;
+    box-sizing: border-box;
+    border: 1px solid #e15960;
+    border-radius: 5px;  
+    cursor: pointer;
+   
+}
+.about {
+    width: 100%;
+}
+a.link {
+    color: #ffffff;
+    
+}
+.alt{
+	height: 150px;
+}
+.float {
+    float: right;
+    text-decoration: none;
+}
+.login-blockkk h1 {
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: rgb(255, 255,255) ;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.login-blockkkk h2 {
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: rgb(255, 255,255) ;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.login-blockkk button {
+    color: rgb(255,255,255);
+    width:100%;
+    height: 42px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background:  #ff656c;
+    box-sizing: border-box;
+    border: 1px solid #e15960;
+    border-radius: 5px;  
+    cursor: pointer;
+   
+}
+.login-blockkk {
+    color: black;
+    width: 400px;
+    border-top: 5px solid #ff656c;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.43);
+   /* margin: auto;*/
+    margin-left: 50px;
+   padding: 20px;
+    /*margin-top: 150px;*/
+    float: right;
+   
+}
+.login-blockkkk {
+    color: black;
+    width: 400px;
+    border-top: 5px solid #ff656c;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.43);
+    margin: auto;
+   padding: 20px;
+    /*margin-top: 150px;*/
+    float: left;
+   
+}
+.login-blockkk input {
+
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+   /* font-family: cursive;*/
+    font-weight: bold;
+    padding: 0 20px 0 50px;
+    height: 42px;
+
+}
+

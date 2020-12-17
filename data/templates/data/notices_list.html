@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ALUMNI SYSTEM</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<style>
+			body{
+			background-color: #ebeff5;
+			
+
+		}
+		.card{
+			padding-left: 50px;
+			margin-top: 50px;
+			box-shadow: 5px 5px 15px 5px #000000;
+		}
+		.table{
+			font-family: Lucida Console;
+			font-size: 20px; 
+		}
+		a.big{
+			color: black;
+			font-family: Lucida Console;
+			font-size: 20px; 
+			
+			/*text-shadow: 2px 2px 8px #FF0000;*/
+			/*text-shadow: 2px 2px #FF0000;*/
+			
+			
+		}
+		a:hover{
+			
+			text-decoration: underline;
+			font-weight: bold;
+			/*text-shadow: 2px 2px 8px #FF0000;*/
+			
+			/*text-shadow: 2px 2px #FF0000;*/
+
+		}
+		</style>
+	</head>
+	<body>
+		{% include 'data/nav.html' %}
+		<div class="card card-body">
+		<b><h1 align="center">My Notices</h1></b>
+		{% if notices %}
+		{% for notice in notices %}
+		
+		<table>
+			<tr class="table">
+				<th>Notices</th>
+				<th style="float: right; margin-left: 250px;">Delete</th>
+			</tr>
+			<tr>
+		<td><a class="big" href="{{ notice.noticefile.url }}">{{ notice.title }} (Uploaded by {{ notice.alumni }})</a></td>
+		<td style="float: right; margin-left: 250px;"><a class="btn btn-danger" href="{% url 'delete_file' notice.id%}">Delete</a></td>
+	</tr>
+	</table>
+		
+		{% endfor %}
+		{% endif %}
+		</div>
+
+		
+		
+		
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

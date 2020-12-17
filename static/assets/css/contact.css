@@ -1,0 +1,180 @@
+body{
+    
+    background: url('../../images/8ce39d0b3eeae85e29fba556b1c7a7c9.jpg') no-repeat;
+    background-size: cover;
+}
+header {
+    overflow: hidden;
+}
+div.contact{
+    color: white;
+    width: 100%;
+    border-top: 5px solid #ff656c;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.43);
+    padding: 20px;
+    margin-top: 150px;
+    overflow: hidden;
+   
+}
+div.heading h1 {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.0em;
+}
+div.fig1 {
+    margin-left: 80px;
+    float: left;
+}
+.heading img {
+    margin-left: 100px;
+    width: 450px;
+    height: 252px;
+    border-radius: 15px;  
+}
+.fig1 p {
+    margin-left: 250px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+div.fig2 {
+   margin-left: 80px;
+}
+.fig2 p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;  
+}
+#para {
+    margin-top: -30px;
+}
+.heading button {
+    margin-left: 270px;
+    margin-top: -35px;
+    background-color: #ff656c;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 15px;
+}
+#but {
+    margin-left: 800px;
+}
+div.fig3 {
+    margin-left: 80px;
+    margin-top: 20px;
+    float: left;
+}
+.fig3 p {
+    margin-left: 100px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+div.fig4 {
+   margin-left: 80px;
+   margin-top: 30px;   
+}
+.fig4 p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;  
+}
+
+.heading a {
+    text-decoration: none;
+    color: white;
+}
+.end p {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.end a {
+    text-decoration: underline;
+    color: red;
+}
+.end a:hover{
+    color: #ff656c;
+}
+div.left-side {
+    margin-left: 50px;
+    float: left;
+    color: white;
+    width: 500px;
+    margin-top: 50px;   
+}
+
+.left-side h2,h3 {
+    font-weight: bold;
+    color: #ff656c;
+}
+.left-side h2 {
+    font-size: 2.5em;
+}
+.left-side p, .left-side a {
+    font-weight: 600;
+}
+.left-side a {
+    text-decoration: none;
+    color: white;
+}
+
+.left-side img {
+    border-radius: 15px;
+    margin-top: 60px;
+    width: 550px;
+    height:320px;
+}
+div.right-side {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 150px;
+    float: right;
+    width: 500px;
+    height: 700px;
+}
+.right-side input {
+    color: black;
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: cursive;
+    padding: 0 20px 0 50px;
+    height: 42px;
+}
+.right-side label {
+    color: white;
+    font-size: 1.25em;
+}
+.right-side textarea {
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: cursive;
+    padding: 0 20px 0 50px;
+}
+.right-side button {
+    width:100%;
+    height: 42px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background:  #ff656c;
+    box-sizing: border-box;
+    border: 1px solid #e15960;
+    border-radius: 5px;  
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+   
+}
